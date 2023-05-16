@@ -237,45 +237,34 @@
       </div>
     </div>
   </div>
-
-  <div class="part9"></div>
   
+  <div class="part9">
+    <div class="content-block">
+      <div class="text">
+        <p class="small-text">Get started with Sardine</p>
+        <h2>Safer, Faster Payments</h2>
+        <p>Get in touch with our sales team.</p>
+        <div class="button">
+          <div class="icon"></div>
+          <button>Contact Sales</button>
+        </div>
+      </div>
+    </div>
+    <div class="image"></div>
+  </div>
 
 </section>
 
+<footer></footer>
 
-    <!--
-
-    <div class="blue-block">
-        <h1>Announcing our Series-B led by Andreessen Horowitz Growth Fund</h1>
-        <p>Sardine recently raised $51.5M to accelerate product development and international expansion. Read our blog post by Soups Ranjan, CEO.</p>
-        <div class="button">
-            <div class="icon"></div>
-            <button>Learn more</button>
-        </div>
-    </div>
-
-    <div class="content-block">
-        <div class="text-column">
-            <p class="small-text">Get started with Sardine</p>
-            <h2>Safer, Faster Payments</h2>
-            <p>Your description goes here.</p>
-            <button>Contact Sales</button>
-        </div>
-        <div class="image-column">
-            
-        </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-  <div class="column">
+<!-- <footer>
+<div class="column">
     <h3>© Sardine. All right reserved.</h3>
   </div>
   <div class="column">
     <h3>Platform</h3>
     <ul>
-      <li>Fraud</li>
+      <li>>Fraud</li>
       <li>Compliance</li>
       <li>Crypto On-Ramp</li>
       <li>NFT Checkout</li>
@@ -313,7 +302,7 @@
       <li>Terms of Service</li>
     </ul>
   </div>
-</footer>  -->
+</footer> -->
 
 </body>
 

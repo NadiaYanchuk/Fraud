@@ -295,6 +295,149 @@ section .quotation-block .author {
   margin-top: -55px;
 }
 @media screen and (max-width: 768px) {
+  section .quotation-block .quotation-block {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 5vw;
+  }
+  section .quotation-block .image {
+    display: none;
+  }
+  section .quotation-block .text {
+    margin-top: 1vw;
+  }
+  section .quotation-block .line {
+    display: none;
+  }
+  section .quotation-block .author {
+    margin-left: 0;
+    margin-top: 5vw;
+  }
+}
+section .blue-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 10%;
+  background-color: #2D29D7;
+  height: auto;
+  color: white;
+  border-radius: 16px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding: 10%;
+}
+section .blue-block h1,
+section .blue-block p {
+  margin-top: 30px;
+  width: 374px;
+  color: white;
+}
+section .blue-block h1,
+section .blue-block p {
+  width: 80%;
+}
+@media screen and (max-width: 768px) {
+  section .blue-block .blue-block {
+    padding: auto;
+    height: auto;
+  }
+  section .blue-block h1,
+  section .blue-block p {
+    width: auto;
+    text-align: center;
+  }
+  section .blue-block li {
+    margin-right: 30px;
+  }
+}
+section .part9 {
+  margin-top: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+section .part9 .content-block {
+  width: 100%;
+  max-width: 585px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+section .part9 .content-block .text {
+  padding-right: 50px;
+  text-align: left;
+}
+section .part9 .content-block .text .small-text {
+  color: #4F5664;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+}
+section .part9 .content-block .text h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 54px;
+  line-height: 65px;
+  margin-bottom: 20px;
+}
+section .part9 .content-block .text p {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 30px;
+  color: black;
+}
+section .part9 .content-block .text .button {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 150px;
+  height: 30px;
+  border-radius: 8px;
+  padding: 5px;
+  padding-left: 10px;
+  margin-top: 30px;
+  background-color: #2D29D7;
+}
+section .part9 .content-block .text .button .icon {
+  width: 20px;
+  height: 20px;
+  background-color: #2D29D7;
+  margin-right: 10px;
+  background-color: white;
+}
+section .part9 .content-block .text .button button {
+  color: #2D29D7;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+}
+section .part9 .image {
+  flex: 0 0 100%;
+  max-width: 585px;
+  height: 568px;
+  border-radius: 16px;
+  background-color: #2D29D7;
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  section .part9 .content-block {
+    width: 50%;
+  }
+  section .part9 .image {
+    flex: 0 0 50%;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 768px) {
   section .blocks {
     grid-gap: 10px;
     padding-left: 10%;
@@ -338,29 +481,7 @@ section .quotation-block .author {
     grid-template-columns: 1fr;
   }
 }
-@media screen and (max-width: 768px) {
-  section .quotation-block {
-    flex-direction: column;
-    align-items: flex-start;
-    height: auto;
-    padding: 5vw;
-  }
-  section .image {
-    width: 100%;
-    height: auto;
-    margin-right: 0;
-    margin-bottom: 5vw;
-    max-width: none;
-    max-height: none;
-  }
-  section .text {
-    margin-top: 5vw;
-  }
-  section .line {
-    display: none;
-  }
-  section .author {
-    margin-left: 0;
-    margin-top: 3vw;
-  }
+
+footer {
+  margin-top: 10%;
 }
