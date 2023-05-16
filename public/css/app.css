@@ -1,0 +1,366 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@600&family=Space+Grotesk&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Outfit:wght@600&display=swap");
+/* Colors */
+/* Margins */
+/* Fonts */
+/* Mixins */
+/* All */
+body a,
+body p,
+body button {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 29px;
+}
+body h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 53px;
+  margin-top: 20px;
+  line-height: 65px;
+}
+
+/* Header */
+header {
+  position: relative;
+}
+header .header-background {
+  height: 850px;
+  background-color: #2D29D7;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  flex-direction: column;
+  background-image: url("/images/header.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 20px;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  margin-right: 60px;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+header h1 {
+  padding-top: 95px;
+}
+header h1,
+header p,
+header .header-button {
+  margin-top: 30px;
+  width: 374px;
+  color: white;
+}
+header .header-button {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 130px;
+  height: 30px;
+  border-radius: 8px;
+  padding: 5px 5px 5px 15px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+header .header-button .icon {
+  width: 20px;
+  height: 20px;
+  background-color: #2D29D7;
+  margin-right: 10px;
+}
+header .header-button button {
+  color: #2D29D7;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+@media screen and (max-width: 768px) {
+  header .header-background {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  header h1,
+  header p,
+  header .header-button {
+    width: auto;
+    text-align: center;
+  }
+  header li {
+    margin-right: 30px;
+  }
+}
+
+/* Container */
+section {
+  /* Columns */
+  /* Блок с цитатой */
+}
+section .gray-block {
+  text-align: center;
+  background-color: #F8FAFD;
+  padding-top: 40px;
+  height: 160px;
+  border-radius: 0 0 16px 16px;
+}
+section .gray-block h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 20px;
+  margin: 0;
+}
+section .text-columns {
+  display: flex;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 10%;
+}
+section .text-columns .column {
+  flex: 1;
+}
+section .text-columns .column p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 29px;
+  color: #4F5664;
+}
+section .text-columns .column.column1 {
+  font-size: 20px;
+  line-height: 30px;
+  font-family: "Space Grotesk", sans-serif;
+}
+section .blocks {
+  grid-gap: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin-top: 10%;
+}
+section .blocks .block1 {
+  padding: 20px;
+  border: 1px solid #C6C8CA;
+  border-radius: 8px;
+  padding: 20px;
+}
+section .blocks .block1 .icon {
+  width: 20px;
+  height: 20px;
+  background-color: #2D29D7;
+  margin-right: 10px;
+  width: 48px;
+  height: 48px;
+}
+section .blocks .block1 h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  margin: 15% 0 5% 0;
+  line-height: 24px;
+}
+section .blocks .block1 p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #4F5664;
+}
+section .blocks .block1 h3 {
+  color: #2D29D7;
+}
+section hr {
+  width: 90%;
+  border: none;
+  border-top: 1px solid #C6C8CA;
+  margin: 10% auto;
+}
+section .image-columns {
+  grid-gap: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 10% 0;
+}
+section .image-columns .column {
+  text-align: center;
+  background-color: #F8FAFD;
+  padding: 32px;
+  border-radius: 8px;
+}
+section .image-columns .column .image {
+  width: 100%;
+  height: 300px;
+  background-color: #C6C8CA;
+}
+section .image-columns .column h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  margin: 10px 0;
+}
+section .image-columns .column p {
+  color: #4F5664;
+}
+section .button {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  background-color: white;
+  cursor: pointer;
+  width: 130px;
+  height: 30px;
+  border-radius: 8px;
+  border: 3px solid #2D29D7;
+  padding: 5px;
+  padding-left: 10px;
+  margin-top: 30px;
+}
+section .button .icon {
+  width: 20px;
+  height: 20px;
+  background-color: #2D29D7;
+  margin-right: 10px;
+}
+section .button button {
+  color: #2D29D7;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+section .block {
+  padding: 20px;
+}
+section .block .icon {
+  width: 20px;
+  height: 20px;
+  background-color: #2D29D7;
+  margin-right: 10px;
+  width: 48px;
+  height: 48px;
+}
+section .block h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  margin: 15% 0 5% 0;
+  line-height: 24px;
+}
+section .block p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #4F5664;
+}
+section .quotation-block {
+  display: flex;
+  align-items: center;
+  background-color: #2D29D7;
+  padding: 5vw;
+  border-radius: 16px;
+  color: white;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+section .quotation-block .image {
+  width: 20vw;
+  max-width: 200px;
+  height: 20vw;
+  max-height: 200px;
+  background-color: white;
+  margin-right: 2vw;
+}
+section .quotation-block .icon {
+  align-self: flex-start;
+}
+section .quotation-block .text {
+  position: relative;
+  flex: 1;
+  padding: 80px 0 0 0;
+}
+section .quotation-block .line {
+  position: relative;
+  margin-top: 40px;
+  width: 2px;
+  height: 55px;
+  background-color: white;
+}
+section .quotation-block .author {
+  margin-left: 3vw;
+  margin-top: -55px;
+}
+@media screen and (max-width: 768px) {
+  section .blocks {
+    grid-gap: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  section .image-columns {
+    grid-gap: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 480px) {
+  section .blocks {
+    grid-gap: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    grid-template-columns: 1fr;
+  }
+  section .image-columns {
+    grid-gap: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 768px) {
+  section .text-columns {
+    flex-direction: column;
+  }
+  section .text-columns .column {
+    margin-bottom: 10%;
+  }
+}
+@media screen and (max-width: 768px) {
+  section .image-columns {
+    grid-gap: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 768px) {
+  section .quotation-block {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 5vw;
+  }
+  section .image {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 5vw;
+    max-width: none;
+    max-height: none;
+  }
+  section .text {
+    margin-top: 5vw;
+  }
+  section .line {
+    display: none;
+  }
+  section .author {
+    margin-left: 0;
+    margin-top: 3vw;
+  }
+}
