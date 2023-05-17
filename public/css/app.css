@@ -68,6 +68,7 @@ header .header-button {
   width: 130px;
   height: 30px;
   border-radius: 8px;
+  border: 3px solid #2D29D7;
   padding: 5px 5px 5px 15px;
   margin-top: 30px;
   cursor: pointer;
@@ -83,6 +84,16 @@ header .header-button button {
   border: none;
   cursor: pointer;
   background-color: transparent;
+}
+header .header-button:hover {
+  background-color: #2D29D7;
+  border-color: white;
+}
+header .header-button:hover button {
+  color: white;
+}
+header .header-button:hover .icon {
+  background-color: white;
 }
 @media screen and (max-width: 768px) {
   header .header-background {
@@ -148,6 +159,7 @@ section .blocks .block1 {
   border: 1px solid #C6C8CA;
   border-radius: 8px;
   padding: 20px;
+  transition: box-shadow 0.3s ease;
 }
 section .blocks .block1 .icon {
   width: 20px;
@@ -171,6 +183,9 @@ section .blocks .block1 p {
 section .blocks .block1 h3 {
   color: #2D29D7;
 }
+section .blocks .block1:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
 section hr {
   width: 90%;
   border: none;
@@ -185,12 +200,14 @@ section .image-columns {
   grid-template-columns: repeat(3, 1fr);
   margin: 10% 0;
   margin-top: 5%;
+  cursor: pointer;
 }
 section .image-columns .column {
   text-align: center;
   background-color: #F8FAFD;
   padding: 32px;
   border-radius: 8px;
+  transition: box-shadow 0.3s ease;
 }
 section .image-columns .column .image {
   width: 100%;
@@ -204,6 +221,9 @@ section .image-columns .column h3 {
 }
 section .image-columns .column p {
   color: #4F5664;
+}
+section .image-columns .column:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 section .button {
   display: flex;
@@ -230,6 +250,16 @@ section .button button {
   border: none;
   cursor: pointer;
   background-color: transparent;
+}
+section .button:hover {
+  background-color: #2D29D7;
+  border-color: white;
+}
+section .button:hover button {
+  color: white;
+}
+section .button:hover .icon {
+  background-color: white;
 }
 section .block {
   padding: 20px;
@@ -263,6 +293,7 @@ section .quotation-block {
   margin-top: 10%;
   margin-left: 10%;
   margin-right: 10%;
+  transition: box-shadow 0.3s ease;
 }
 section .quotation-block .image {
   width: 20vw;
@@ -311,6 +342,9 @@ section .quotation-block .author {
     margin-left: 0;
     margin-top: 5vw;
   }
+}
+section .quotation-block:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 section .blue-block {
   position: relative;
@@ -416,6 +450,16 @@ section .part9 .content-block .text .button button {
   cursor: pointer;
   background-color: transparent;
   color: white;
+}
+section .part9 .content-block .button:hover {
+  background-color: white;
+  border-color: #2D29D7;
+}
+section .part9 .content-block .button:hover button {
+  color: #2D29D7;
+}
+section .part9 .content-block .button:hover .icon {
+  background-color: #2D29D7;
 }
 section .part9 .image {
   flex: 0 0 100%;

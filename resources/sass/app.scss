@@ -138,6 +138,7 @@ header {
         width: 130px;
         height: 30px;
         border-radius: 8px;
+        border: 3px solid $primary-color;
         padding: 5px 5px 5px 15px;
         margin-top: 30px;
         cursor: pointer;
@@ -150,6 +151,16 @@ header {
             @include btn;
         }
     }
+    .header-button:hover {
+        background-color: $primary-color;
+        border-color: $secondary-color;
+        button {
+            color: $secondary-color;
+        }
+        .icon {
+            background-color: $secondary-color;
+        }
+      }
 
     @media screen and (max-width: 768px) {
         .header-background {
@@ -226,10 +237,15 @@ section {
             border: 1px solid $tmp-color;
             border-radius: 8px;
             padding: 20px;
+            transition: box-shadow 0.3s ease;
 
             h3 {
                 color: $primary-color;
             }
+        }
+
+        .block1:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         }
     }
 
@@ -246,12 +262,14 @@ section {
         grid-template-columns: repeat(3, 1fr);
         margin: $site-margin-between-blocks 0;
         margin-top: 5%;
+        cursor: pointer;
 
         .column {
             text-align: center;
             background-color: $block-color;
             padding: 32px;
             border-radius: 8px;
+            transition: box-shadow 0.3s ease;
 
             .image {
                 width: 100%;
@@ -268,6 +286,10 @@ section {
             p {
                 color: $text-color;
             }
+        }
+
+        .column:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         }
     }
 
@@ -292,6 +314,19 @@ section {
         button {
             @include btn;
         }
+
+        &:hover {
+            background-color: $primary-color;
+            border-color: $secondary-color;
+
+            button {
+                color: $secondary-color;
+            }
+
+            .icon {
+                background-color: $secondary-color;
+            }
+        }
     }
 
     .block {
@@ -308,6 +343,7 @@ section {
         margin-top: $site-margin-between-blocks;
         margin-left: $site-margin-left;
         margin-right: $site-margin-right;
+        transition: box-shadow 0.3s ease;
 
         .image {
             width: 20vw;
@@ -366,6 +402,10 @@ section {
                 margin-top: 5vw;
             }
         }
+    }
+
+    .quotation-block:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     }
 
     .blue-block {
@@ -478,6 +518,19 @@ section {
                         @include btn;
                         color: $secondary-color;
                     }
+                }
+            }
+
+            .button:hover {
+                background-color: $secondary-color;
+                border-color: $primary-color;
+
+                button {
+                    color: $primary-color;
+                }
+
+                .icon {
+                    background-color: $primary-color;
                 }
             }
         }
