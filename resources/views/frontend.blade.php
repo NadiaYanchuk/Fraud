@@ -163,7 +163,7 @@
   <div class="part6">
   <div class="text-columns">
       <div class="column">
-        <p>Instant settlement</p>
+        <p class="column1">Instant settlement</p>
       </div>
       <div class="column">
         <h1>Don’t make your customers wait 2-3 days for their money</h1>
@@ -195,7 +195,7 @@
   <div class="part7">
   <div class="text-columns">
       <div class="column">
-        <p>Why Sardine</p>
+        <p class="column1">Why Sardine</p>
       </div>
       <div class="column">
         <h1>We live in an era of faster money movement</h1>
@@ -255,54 +255,52 @@
 
 </section>
 
-<footer></footer>
-
-<!-- <footer>
-<div class="column">
-    <h3>© Sardine. All right reserved.</h3>
+<footer>
+  <div class="column">
+    <h3 class="right">© Sardine. All right reserved.</h3>
   </div>
   <div class="column">
     <h3>Platform</h3>
     <ul>
-      <li>>Fraud</li>
-      <li>Compliance</li>
-      <li>Crypto On-Ramp</li>
-      <li>NFT Checkout</li>
-      <li>Entity Risk</li>
+      <li><a href="#">Fraud</a></li>
+      <li><a href="#">Compliance</a></li>
+      <li><a href="#">Crypto On-Ramp</a></li>
+      <li><a href="#">NFT Checkout</a></li>
+      <li><a href="#">Entity Risk</a></li>
     </ul>
   </div>
   <div class="column">
     <h3>Solutions for</h3>
     <ul>
-      <li>Fintech</li>
-      <li>TradFi</li>
-      <li>Crypto</li>
-      <li>NFT</li>
+      <li><a href="#">Fintech</a></li>
+      <li><a href="#">TradFi</a></li>
+      <li><a href="#">Crypto</a></li>
+      <li><a href="#">NFT</a></li>
     </ul>
   </div>
   <div class="column">
     <h3>Learn</h3>
     <ul>
-      <li>Documentation</li>
-      <li>Blog</li>
-      <li>Events</li>
+      <li><a href="#">Documentation</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Events</a></li>
     </ul>
   </div>
   <div class="column">
     <h3>Company</h3>
     <ul>
-      <li>About</li>
-      <li>Careers</li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Careers</a></li>
     </ul>
   </div>
   <div class="bottom-row">
     <ul>
-      <li>Privacy Policy</li>
-      <li>GDPR</li>
-      <li>Terms of Service</li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">GDPR</a></li>
+      <li><a href="#">Terms of Service</a></li>
     </ul>
   </div>
-</footer> -->
+</footer>
 
 </body>
 

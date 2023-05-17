@@ -188,7 +188,6 @@ section {
         }
     }
 
-    /* Columns */
     .text-columns {
         display: flex;
         padding-left: $site-margin-left;
@@ -203,9 +202,10 @@ section {
                 font-size: 16px;
                 line-height: 29px;
                 color: $text-color;
+                padding-top: 30px;
             }
 
-            &.column1 {
+            .column1 {
                 font-size: 20px;
                 line-height: 30px;
                 font-family: $heading-font;
@@ -245,6 +245,7 @@ section {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         margin: $site-margin-between-blocks 0;
+        margin-top: 5%;
 
         .column {
             text-align: center;
@@ -297,7 +298,6 @@ section {
         @include blocks;
     }
 
-    /* Блок с цитатой */
     .quotation-block {
         display: flex;
         align-items: center;
@@ -422,86 +422,86 @@ section {
         justify-content: space-between;
         margin-left: $site-margin-left;
         margin-right: $site-margin-right;
-      
+
         .content-block {
-          width: 100%;
-          max-width: 585px;
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-      
-          .text {
-            padding-right: 50px;
-            text-align: left;
-      
-            .small-text {
-              color: $text-color;
-              font-family: $text-font;
-              font-size: 20px;
-              line-height: 20px;
+            width: 100%;
+            max-width: 585px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            .text {
+                padding-right: 50px;
+                text-align: left;
+
+                .small-text {
+                    color: $text-color;
+                    font-family: $text-font;
+                    font-size: 20px;
+                    line-height: 20px;
+                }
+
+                h2 {
+                    font-family: $heading-font;
+                    font-size: 54px;
+                    line-height: 65px;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-family: $text-font;
+                    font-size: 15px;
+                    line-height: 24px;
+                    margin-bottom: 30px;
+                    color: black;
+                }
+
+                .button {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 10px;
+                    cursor: pointer;
+                    width: 150px;
+                    height: 30px;
+                    border-radius: 8px;
+                    padding: 5px;
+                    padding-left: 10px;
+                    margin-top: 30px;
+                    background-color: $primary-color;
+
+                    .icon {
+                        @include icon;
+                        background-color: $secondary-color;
+                    }
+
+                    button {
+                        @include btn;
+                        color: $secondary-color;
+                    }
+                }
             }
-      
-            h2 {
-              font-family: $heading-font;
-              font-size: 54px;
-              line-height: 65px;
-              margin-bottom: 20px;
-            }
-      
-            p {
-              font-family: $text-font;
-              font-size: 15px;
-              line-height: 24px;
-              margin-bottom: 30px;
-              color: black;
-            }
-      
-            .button {
-              display: flex;
-              align-items: center;
-              margin-top: 10px;
-              cursor: pointer;
-              width: 150px;
-              height: 30px;
-              border-radius: 8px;
-              padding: 5px;
-              padding-left: 10px;
-              margin-top: 30px;
-              background-color: $primary-color;
-      
-              .icon {
-                @include icon;
-                background-color: $secondary-color;
-              }
-      
-              button {
-                @include btn;
-                color: $secondary-color;
-              }
-            }
-          }
         }
-      
+
         .image {
-          flex: 0 0 100%;
-          max-width: 585px;
-          height: 568px;
-          border-radius: 16px;
-          background-color: $primary-color;
-          margin-top: 20px;
+            flex: 0 0 100%;
+            max-width: 585px;
+            height: 568px;
+            border-radius: 16px;
+            background-color: $primary-color;
+            margin-top: 20px;
         }
-      
+
         @media (min-width: 768px) {
-          .content-block {
-            width: 50%;
-          }
-      
-          .image {
-            flex: 0 0 50%;
-            margin-top: 0;
-          }
+            .content-block {
+                width: 50%;
+            }
+
+            .image {
+                flex: 0 0 50%;
+                margin-top: 0;
+            }
         }
-      }
+    }
 
     @media screen and (max-width: 768px) {
         .blocks {
@@ -545,67 +545,91 @@ section {
     }
 }
 
+/* Footer */
 footer {
+    height: auto;
+    background-color: #090628;
+    padding: 20px;
+    color: $secondary-color;
     margin-top: $site-margin-between-blocks;
+    font-size: 14px;
+    line-height: 35px;
+    font-family: $text-font;
+    border-radius: 24px 24px 0px 0px;
+    padding-top: 5%;
+    padding-left: 5%;
+
+    .column {
+        float: left;
+        width: 17%;
+        padding: 20px;
+
+        h3 {
+            margin-top: 0;
+            font-family: $heading-font;
+            color: #AEACFF;
+            padding-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                margin-bottom: 5px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 35px;
+        font-family: $text-font;
+        color: $secondary-color;
+    }
+
+    .bottom-row {
+        clear: both;
+        margin-top: 20px;
+        margin-right: 140px;
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: flex-end;
+
+            li {
+                margin-left: 10px;
+                padding-left: 20px;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+        .column {
+            width: 90%;
+        }
+
+        .bottom-row {
+            margin-left: 0;
+            text-align: left;
+            width: 80%;
+        }
+
+        ul.bottom-row {
+            justify-content: flex-start;
+        }
+    }
 }
-
-// footer {
-//     height: 470px;
-//     background-color: #090628;
-//     padding: 20px;
-//     color: $secondary-color;
-//     margin-top: $site-margin-between-blocks;
-  
-//     .column {
-//       float: left;
-//       width: 20%;
-//       padding: 10px;
-  
-//       h3 {
-//         margin-top: 0;
-//         font-size: 16px;
-//         font-weight: bold;
-//       }
-  
-//       ul {
-//         list-style-type: none;
-//         padding: 0;
-//         margin: 0;
-  
-//         li {
-//           margin-bottom: 5px;
-  
-//           &:last-child {
-//             margin-bottom: 0;
-//           }
-//         }
-//       }
-//     }
-  
-//     .bottom-row {
-//       clear: both;
-//       margin-top: 20px;
-  
-//       ul {
-//         list-style-type: none;
-//         padding: 0;
-//         margin: 0;
-//         display: flex;
-//         justify-content: flex-end;
-  
-//         li {
-//           margin-left: 10px;
-  
-//           &:first-child {
-//             margin-left: 0;
-//           }
-//         }
-//       }
-//     }
-
-  
-  
-  
-  
-  
-  
