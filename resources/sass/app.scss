@@ -63,7 +63,7 @@ $text-font: "Inter", sans-serif;
 
 @mixin text-columns {}
 
-/* All */
+/* Basic setting */
 body {
 
     a,
@@ -184,7 +184,7 @@ header {
 
 
 /* Container */
-section {
+.container {
     .gray-block {
         text-align: center;
         background-color: $block-color;
