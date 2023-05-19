@@ -12,7 +12,9 @@
 </head>
 
 <body>
-  <!--========== Navigation ==========-->
+  
+  <section id="heading">
+    <!--========== Navigation ==========-->
     <header class="header">
       <nav class="menu">
         <ul class="list">
@@ -22,20 +24,20 @@
         </ul>
       </nav>
     </header>
-
-    <main>
-      <!--========== Heading ==========-->
-      <section id="heading-block">
-        <div class="container">
-          <h1 class="title">One platform for fraud, compliance, and payments</h1>
-          <p class="description">Combine risk, compliance, and payment protection to increase customer trust and loyalty - all from one powerful API.</p>
-          <div class="button">
-            <div class="icon"></div>
-            <a href="#">Contact us</a>
-          </div>
+    <!--========== Heading ==========-->
+    <section id="heading-block">
+      <div class="container">
+        <h1 class="title">One platform for fraud, compliance, and payments</h1>
+        <p class="description">Combine risk, compliance, and payment protection to increase customer trust and loyalty - all from one powerful API.</p>
+        <div class="button">
+          <div class="icon"></div>
+          <a href="#">Contact us</a>
         </div>
-      </section>
-
+      </div>
+    </section>
+  </section>
+    
+    <main>
       <!--========== Trusted by ==========-->
       <section id="trusted-by">
         <div class="container">
