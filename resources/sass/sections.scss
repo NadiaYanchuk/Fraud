@@ -18,11 +18,13 @@
         max-width: 374px;
         color: $secondary-color;
         margin-top: 11%;
+
         .title {
             font-size: 53px;
             margin-top: 30px;
             padding-bottom: 20px;
         }
+
         .description {
             font-family: $text-font;
             font-size: 16px;
@@ -59,6 +61,7 @@
 
         .title {
             color: $primary-color;
+            padding: 15px 0 20px 0;
         }
     }
 
@@ -81,7 +84,7 @@
 #quote-block {
     .container {
         display: flex;
-        align-items: center;
+        flex-direction: row;
         background-color: $primary-color;
         padding: 5vw;
         border-radius: 16px;
@@ -90,39 +93,47 @@
         margin-left: $site-margin-left;
         margin-right: $site-margin-right;
         transition: box-shadow 0.3s ease;
-        .image {
-            width: 20vw;
-            max-width: 200px;
-            height: 20vw;
-            max-height: 200px;
-            background-color: $secondary-color;
-            margin-right: 2vw;
-        }
-    
-        .icon {
-            align-self: flex-start;
-        }
-    
-        .text {
-            position: relative;
-            flex: 1;
-            padding: 80px 0 0 0;
-            font-size: 24px;
-            color: $secondary-color;
-        }
-    
-        .line {
-            position: relative;
-            margin-top: 40px;
-            width: 2px;
-            height: 55px;
-            background-color: white;
-        }
-    
-        .author {
-            font-family: $text-font;
-            margin-left: 3vw;
-            margin-top: -55px;
+
+        .content {
+            display: flex;
+            flex-direction: row;
+
+            .image {
+                max-width: 250px;
+                max-height: 250px;
+                background-color: $secondary-color;
+                margin-right: 2vw;
+                align-self: center;
+            }
+
+            .icon {
+                align-self: flex-start;
+                margin-left: 20px;
+            }
+
+            .text {
+                position: relative;
+                flex: 1;
+                padding: 80px 0 0 0;
+                margin-left: -40px;
+                font-size: 24px;
+                color: $secondary-color;
+
+            }
+
+            .line {
+                position: relative;
+                margin-top: 40px;
+                width: 2px;
+                height: 55px;
+                background-color: white;
+            }
+
+            .author {
+                font-family: $text-font;
+                margin-left: 30px;
+                margin-top: -55px;
+            }
         }
     }
 }
@@ -140,46 +151,103 @@
 /*========== Series-B ==========*/
 #series-b-block {
     margin-top: $site-margin-between-blocks;
+
+    .container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: $site-margin-between-blocks;
+        background-color: $primary-color;
+        height: auto;
+        color: $secondary-color;
+        border-radius: 16px;
+        padding-left: $site-margin-left;
+        padding-right: $site-margin-right;
+        padding: 10% 10% 10% 15%;
+
+        .content {
+            margin-top: 30px;
+            width: 80%;
+            color: $secondary-color;
+
+            .title {
+                font-size: 41px;
+                padding-bottom: 20px;
+            }
+
+            .text {
+                color: $secondary-color;
+                font-size: 20px;
+                line-height: 1.5;
+            }
+        }
+    }
 }
 
 /*========== Payments ==========*/
 #payments-block {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: $site-margin-left;
-    margin-right: $site-margin-right;
-    margin-top: $site-margin-between-blocks;
-
-    .content {
+    .container {
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        font-family: $text-font;
-        line-height: 1.2;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: $site-margin-left;
+        margin-right: $site-margin-right;
+        margin-top: $site-margin-between-blocks;
 
-        .subtitle {
-            font-size: 20px;
+        .content {
+            display: flex;
+            flex-direction: column;
+            font-family: $text-font;
+            line-height: 1.2;
+            margin-top: 40px;
+
+            .subtitle {
+                font-size: 20px;
+            }
+
+            .title {
+                font-family: $heading-font;
+                font-size: 54px;
+                margin: 30px 0 30px 0;
+            }
+
+            .button {
+                background-color: $primary-color;
+                padding: 10px 10px;
+
+                a {
+                    color: $secondary-color;
+                }
+
+                .icon {
+                    background-color: $secondary-color;
+                }
+            }
+            .button:hover {
+                background-color: $secondary-color;
+                border-color: $primary-color;
+
+                a {
+                    color: $primary-color;
+                }
+
+                .icon {
+                    background-color: $primary-color;
+                }
+              }
         }
 
-        .title {
-            font-family: $heading-font;
-            font-size: 54px;
-            line-height: 65px;
-            margin-bottom: 20px;
-        }
-
-        .text {
-            text-align: left;
-            padding-right: 50px;
+        .image {
+            display: flex;
+            height: 500px;
+            width: 40%;
+            background-color: $primary-color;
+            border-radius: 16px;
         }
     }
-
-    .image {
-        display: flex;
-        justify-content: flex-end;
-      }
 }
 
 

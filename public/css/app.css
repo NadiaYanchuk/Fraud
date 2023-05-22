@@ -109,6 +109,17 @@ a {
   color: #2D29D7;
 }
 
+.button:hover {
+  background-color: #2D29D7;
+  border-color: white;
+}
+.button:hover a {
+  color: white;
+}
+.button:hover .icon {
+  background-color: white;
+}
+
 .menu {
   display: flex;
   justify-content: center;
@@ -162,6 +173,9 @@ a {
 }
 .cards-image .card-image:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.cards-image .title {
+  padding: 15px 0 25px 0;
 }
 
 .cards-text {
@@ -239,6 +253,7 @@ hr {
 }
 #numbers-block .card-text-custom .title {
   color: #2D29D7;
+  padding: 15px 0 20px 0;
 }
 #numbers-block .card-text-custom:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -257,7 +272,7 @@ hr {
 /*========== Quote ==========*/
 #quote-block .container {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   background-color: #2D29D7;
   padding: 5vw;
   border-radius: 16px;
@@ -267,34 +282,39 @@ hr {
   margin-right: 10%;
   transition: box-shadow 0.3s ease;
 }
-#quote-block .container .image {
-  width: 20vw;
-  max-width: 200px;
-  height: 20vw;
-  max-height: 200px;
+#quote-block .container .content {
+  display: flex;
+  flex-direction: row;
+}
+#quote-block .container .content .image {
+  max-width: 250px;
+  max-height: 250px;
   background-color: white;
   margin-right: 2vw;
+  align-self: center;
 }
-#quote-block .container .icon {
+#quote-block .container .content .icon {
   align-self: flex-start;
+  margin-left: 20px;
 }
-#quote-block .container .text {
+#quote-block .container .content .text {
   position: relative;
   flex: 1;
   padding: 80px 0 0 0;
+  margin-left: -40px;
   font-size: 24px;
   color: white;
 }
-#quote-block .container .line {
+#quote-block .container .content .line {
   position: relative;
   margin-top: 40px;
   width: 2px;
   height: 55px;
   background-color: white;
 }
-#quote-block .container .author {
+#quote-block .container .content .author {
   font-family: "Inter", sans-serif;
-  margin-left: 3vw;
+  margin-left: 30px;
   margin-top: -55px;
 }
 
@@ -312,40 +332,87 @@ hr {
 #series-b-block {
   margin-top: 10%;
 }
+#series-b-block .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 10%;
+  background-color: #2D29D7;
+  height: auto;
+  color: white;
+  border-radius: 16px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding: 10% 10% 10% 15%;
+}
+#series-b-block .container .content {
+  margin-top: 30px;
+  width: 80%;
+  color: white;
+}
+#series-b-block .container .content .title {
+  font-size: 41px;
+  padding-bottom: 20px;
+}
+#series-b-block .container .content .text {
+  color: white;
+  font-size: 20px;
+  line-height: 1.5;
+}
 
 /*========== Payments ==========*/
-#payments-block {
+#payments-block .container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 10%;
 }
-#payments-block .content {
+#payments-block .container .content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   font-family: "Inter", sans-serif;
   line-height: 1.2;
+  margin-top: 40px;
 }
-#payments-block .content .subtitle {
+#payments-block .container .content .subtitle {
   font-size: 20px;
 }
-#payments-block .content .title {
+#payments-block .container .content .title {
   font-family: "Space Grotesk", sans-serif;
   font-size: 54px;
-  line-height: 65px;
-  margin-bottom: 20px;
+  margin: 30px 0 30px 0;
 }
-#payments-block .content .text {
-  text-align: left;
-  padding-right: 50px;
+#payments-block .container .content .button {
+  background-color: #2D29D7;
+  padding: 10px 10px;
 }
-#payments-block .image {
+#payments-block .container .content .button a {
+  color: white;
+}
+#payments-block .container .content .button .icon {
+  background-color: white;
+}
+#payments-block .container .content .button:hover {
+  background-color: white;
+  border-color: #2D29D7;
+}
+#payments-block .container .content .button:hover a {
+  color: #2D29D7;
+}
+#payments-block .container .content .button:hover .icon {
+  background-color: #2D29D7;
+}
+#payments-block .container .image {
   display: flex;
-  justify-content: flex-end;
+  height: 500px;
+  width: 40%;
+  background-color: #2D29D7;
+  border-radius: 16px;
 }
 
 /*========== Footer ==========*/

@@ -59,6 +59,19 @@ a {
         color: $primary-color;
     }
 }
+.button:hover {
+    background-color: $primary-color;
+    border-color: $secondary-color;
+
+    a {
+        color: $secondary-color;
+    }
+
+    .icon {
+        background-color: $secondary-color;
+    }
+}
+
 
 .menu {
     display: flex;
@@ -120,6 +133,10 @@ a {
 
     .card-image:hover {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .title {
+        padding: 15px 0 25px 0;
     }
 }
 
