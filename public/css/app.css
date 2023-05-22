@@ -455,9 +455,141 @@ footer .row .row-list {
   justify-content: flex-end;
 }
 footer .row .row-list .row-item {
-  margin-left: 10px;
-  padding-left: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 footer .row .row-list .row-item:first-child {
   margin-left: 0;
+}
+
+/* For small devices */
+@media screen and (max-width: 480px) {
+  .blocks {
+    grid-gap: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    grid-template-columns: 1fr;
+  }
+  .cards-image {
+    grid-gap: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    grid-template-columns: 1fr;
+  }
+}
+/* For mobile devices */
+@media (max-width: 767px) {
+  .cards-text {
+    grid-gap: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .cards-image {
+    grid-gap: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .columns {
+    flex-direction: column;
+  }
+  .columns .column-item {
+    margin-bottom: 10%;
+  }
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 70px;
+  }
+  .menu .item {
+    margin-left: -20px;
+    margin-bottom: 10px;
+  }
+  /*========== Heading ==========*/
+  #heading .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #heading .container .title,
+  #heading .container .description,
+  #heading .container .button {
+    width: auto;
+    text-align: center;
+  }
+  /*========== Quote ==========*/
+  #quote-block .container {
+    flex-direction: row;
+  }
+  #quote-block .container .content {
+    margin-left: -20px;
+  }
+  #quote-block .container .content .image {
+    display: none;
+  }
+  #quote-block .container .content .text {
+    padding: 80px 0 0 0;
+  }
+  #quote-block .container .content .author {
+    margin-left: 20px;
+    margin-top: -55px;
+  }
+  /*========== Payments ==========*/
+  #payments-block .container {
+    flex-direction: column;
+  }
+  #payments-block .container .image {
+    width: 100%;
+    margin-top: 30px;
+  }
+  /*========== Footer ==========*/
+  footer .column {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+  footer .column .title {
+    font-size: 12px;
+  }
+  footer .column .column-list .column-item {
+    font-size: 11px;
+  }
+  footer .row {
+    margin-top: 10px;
+    width: 100%;
+  }
+  footer .row .row-list {
+    justify-content: center;
+  }
+  footer .row .row-list .row-item {
+    margin: 0 5px;
+    padding-bottom: 20px;
+  }
+}
+/* For tablets */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .cards-text {
+    grid-gap: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cards-image {
+    grid-gap: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /*========== Quote ==========*/
+  #quote-block .container .image {
+    display: none;
+  }
+  /*========== Payments ==========*/
+  #payments-block .container {
+    flex-direction: column;
+  }
+  #payments-block .container .image {
+    width: 100%;
+    margin-top: 30px;
+  }
 }

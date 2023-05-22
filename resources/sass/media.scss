@@ -1,0 +1,177 @@
+/* For small devices */
+@media screen and (max-width: 480px) {
+    .blocks {
+        grid-gap: 10px;
+        padding-left: $site-margin-left;
+        padding-right: $site-margin-right;
+        grid-template-columns: 1fr;
+    }
+
+    .cards-image {
+        grid-gap: 10px;
+        padding-left: $site-margin-left;
+        padding-right: $site-margin-right;
+        grid-template-columns: 1fr;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 767px) {
+    .cards-text {
+        grid-gap: 40px;
+        padding-left: $site-margin-left;
+        padding-right: $site-margin-right;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cards-image {
+        grid-gap: 10px;
+        padding-left: $site-margin-left;
+        padding-right: $site-margin-right;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .columns {
+        flex-direction: column;
+
+        .column-item {
+            margin-bottom: $site-margin-between-blocks;
+        }
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 70px;
+
+        .item {
+            margin-left: -20px;
+            margin-bottom: 10px;
+        }
+    }
+
+
+
+    /*========== Heading ==========*/
+    #heading {
+        .container {
+            padding-left: 20px;
+            padding-right: 20px;
+
+            .title,
+            .description,
+            .button {
+                width: auto;
+                text-align: center;
+            }
+        }
+    }
+
+    /*========== Quote ==========*/
+    #quote-block {
+        .container {
+            flex-direction: row;
+
+            .content {
+                margin-left: -20px;
+
+                .image {
+                    display: none;
+                }
+
+                .text {
+                    padding: 80px 0 0 0;
+                }
+
+                .author {
+                    margin-left: 20px;
+                    margin-top: -55px;
+                }
+            }
+        }
+    }
+
+    /*========== Payments ==========*/
+    #payments-block {
+        .container {
+            flex-direction: column;
+
+            .image {
+                width: 100%;
+                margin-top: 30px;
+            }
+        }
+    }
+
+    /*========== Footer ==========*/
+    footer {
+        .column {
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+
+            .title {
+                font-size: 12px;
+            }
+
+            .column-list {
+                .column-item {
+                    font-size: 11px;
+                }
+            }
+        }
+
+        .row {
+            margin-top: 10px;
+            width: 100%;
+
+            .row-list {
+                justify-content: center;
+
+                .row-item {
+                    margin: 0 5px;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+
+    }
+}
+
+/* For tablets */
+@media (min-width: 768px) and (max-width: 1200px) {
+    .cards-text {
+        grid-gap: 10px;
+        padding-left: $site-margin-left;
+        padding-right: $site-margin-right;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cards-image {
+        grid-gap: 10px;
+        padding-left: $site-margin-left;
+        padding-right: $site-margin-right;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*========== Quote ==========*/
+    #quote-block {
+        .container {
+            .image {
+                display: none;
+            }
+        }
+    }
+
+    /*========== Payments ==========*/
+    #payments-block {
+        .container {
+            flex-direction: column;
+
+            .image {
+                width: 100%;
+                margin-top: 30px;
+            }
+        }
+    }
+}

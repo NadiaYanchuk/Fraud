@@ -226,6 +226,7 @@
                     background-color: $secondary-color;
                 }
             }
+
             .button:hover {
                 background-color: $secondary-color;
                 border-color: $primary-color;
@@ -237,7 +238,7 @@
                 .icon {
                     background-color: $primary-color;
                 }
-              }
+            }
         }
 
         .image {
@@ -299,8 +300,8 @@ footer {
             justify-content: flex-end;
 
             .row-item {
-                margin-left: 10px;
-                padding-left: 20px;
+                margin-left: 20px;
+                margin-bottom: 20px;
 
                 &:first-child {
                     margin-left: 0;
