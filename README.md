@@ -32,3 +32,4 @@
 
 - Дизайн в Figma: https://www.figma.com/file/v6XWlw7Zwe7OasGjTkMoy4/%D0%94%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD?type=design&node-id=0%3A1&t=micqJ5qVYKYqCFBW-1
 
+![Desktop](https://github.com/NadiaYanchuk/Fraud/assets/99792876/47b72ec6-42f1-4e57-8977-74a9b2d9551f)
